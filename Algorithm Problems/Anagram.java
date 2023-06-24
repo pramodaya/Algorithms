@@ -1,9 +1,10 @@
+import java.util.Arrays;
 import java.util.HashMap;
 
 public class Anagram {
     public static void main(String[] args) {
-        boolean resutl = anagram_solution_1("abcd", "cdab");
-        if(resutl == true){
+        boolean resutl = anagram_solution_2("abcd", "cdab");
+        if(resutl){
             System.out.println("Anagram");
         }else{
             System.out.println("Not Anagram");
@@ -41,6 +42,16 @@ public class Anagram {
     }
 
     public static boolean anagram_solution_2(String text1, String text2) {
-       return true;
+        if (text1.length() != text2.length()) {
+            return false;
+        }
+
+        char[] charArray1 = text1.toCharArray();
+        char[] charArray2 = text2.toCharArray();
+
+        Arrays.sort(charArray1);
+        Arrays.sort(charArray2);
+
+        return Arrays.equals(charArray1, charArray2);
     }
 }
