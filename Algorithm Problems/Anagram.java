@@ -40,4 +40,7 @@ public class Anagram {
         return hashMap.isEmpty();
     }
 
+    public static boolean anagram_solution_2(String text1, String text2) {
+       return true;
+    }
 }
