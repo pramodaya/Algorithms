@@ -9,6 +9,12 @@ public class FirstAndLastIndexSortedArrayGivenValue {
         printArray(result);
     }
 
+    /**
+     * For loop method
+     * @param arr
+     * @param number
+     * @return
+     */
     public static int[] solution_1(int[] arr, int number) {
         int[] array = getEmptyArray();
 
@@ -39,6 +45,12 @@ public class FirstAndLastIndexSortedArrayGivenValue {
         }
     }
 
+    /**
+     * Binary search method
+     * @param arr
+     * @param number
+     * @return
+     */
     public static int[] binarySearchMethod(int[] arr, int number){
         int[] array = getEmptyArray();
 
