@@ -12,6 +12,12 @@ public class Anagram {
 
     }
 
+    /**
+     * Hash map method
+     * @param text1
+     * @param text2
+     * @return boolean
+     */
     public static boolean anagram_solution_1(String text1, String text2){
         HashMap<Character, Integer> hashMap = new HashMap<>();
         if(text1.length() != text2.length()){
@@ -41,6 +47,12 @@ public class Anagram {
         return hashMap.isEmpty();
     }
 
+    /**
+     * Sorting method
+     * @param text1
+     * @param text2
+     * @return boolean
+     */
     public static boolean anagram_solution_2(String text1, String text2) {
         if (text1.length() != text2.length()) {
             return false;
